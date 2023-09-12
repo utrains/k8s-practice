@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: utrains
+ labels:
+  app: utrains
+spec:
+ containers:
+   - name: utrains-app
+     image: httpd
+
+
+# create a file called simple-pod.yaml with the content
+# Save the file and create the object in the cluster with:
+## kubectl create -f simple-pod.yaml
+#
+# List the pods in the cluster
+## kubectl get pods
+#
+# To get more information on the pod
+## kubectl describe pod utrains
+#
+# Delete the pod
+## kubectl delete pod utrains
